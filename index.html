@@ -1,12 +1,279 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hello World!</title>
+    <title>Document</title>
 </head>
+
 <body>
-    Hello World!
+    <div class="navbar navbar-expand-sm bg-secondary">
+        <div class="container">
+            <div class="navbar-brand">
+                <a href="https://github.com/erenova" target="_blank" class="" data-bs-toggle="tooltip"
+                    data-bs-placement="left" title="Me!">
+                    <img src="https://avatars.githubusercontent.com/u/95050098?v=4" style="width: 100px;"
+                        class="rounded-pill" alt="">
+                </a>
+            </div>
+            <div class="navbar-header display-6"
+                style="position: absolute; top: 50%; left: 50%; transform: translate(-50%,-50%);">Erenova's Portfolio
+            </div>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="mynavbar">
+                <div class="navbar-header display-6 d-flex d-sm-none align-items-center justify-content-center"
+                    style="width: 100%;">Erenova's
+                    Portfolio
+                </div>
+                <ul class="nav nav-pills d-flex d-sm-none flex-column justify-content-center mt-1 gap-1">
+                    <li class="nav-item">
+                        <a class="nav-link active bg-dark" data-bs-toggle="tab" href="#home">Portfolio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link  bg-dark" data-bs-toggle="tab" href="#progress">Progress</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link  bg-dark" data-bs-toggle="tab" href="#about">About</a>
+                    </li>
+                </ul>
+
+            </div>
+        </div>
+    </div>
+    <div class="container ">
+        <!-- Nav tabs -->
+        <ul class="nav nav-pills d-sm-flex justify-content-center mt-1 gap-5 d-none">
+            <li class="nav-item">
+                <a class="nav-link active" data-bs-toggle="tab" href="#home">Portfolio</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link " data-bs-toggle="tab" href="#progress">Progress</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" data-bs-toggle="tab" href="#about">About</a>
+            </li>
+        </ul>
+
+        <!-- Tab panes -->
+        <div class="container">
+            <div class="tab-content mt-5  border border-1 border-secondary border-opacity-25">
+                <div class="tab-pane container mt-5 mb-5 text-center p-2 active" id="home">
+                    <p class="mb-5 display-5">Completed Projects</p>
+                    <div class=" gap-4 mt-3 d-flex justify-content-center align-items-center flex-wrap">
+                        <button type="button" data-bs-toggle="modal" data-bs-target="#modal1"
+                            class="text-center btn btn-outline-success d-flex align-items-center justify-content-center"
+                            style="width: 10rem;height: 4rem;">
+                            Calculator
+                        </button>
+                        <button type="button" data-bs-toggle="modal" data-bs-target="#modal2"
+                            class="text-center btn btn-outline-success d-flex align-items-center justify-content-center"
+                            style="width: 10rem;height: 4rem;">
+                            Sketchpad
+                        </button>
+                        <button type="button" data-bs-toggle="modal" data-bs-target="#modal3"
+                            class="text-center btn btn-outline-success d-flex align-items-center justify-content-center"
+                            style="width: 10rem; ">
+                            Rock Paper Scissors
+                        </button>
+                    </div>
+                </div>
+                <div class="tab-pane container mt-5 mb-5 text-center p-2 " id="progress">
+                    <p class="mb-5 display-5">Progress</p>
+                    <div class=" gap-4 mt-3 d-flex justify-content-center align-items-center flex-wrap">
+                        <div class="text-center border d-flex align-items-center justify-content-center"
+                            style="width: 10rem;height: 4rem;">
+                            <span>HTML5</span>
+                            <div class="progress mx-2" style="width: 50%;">
+                                <div class="progress-bar progress-bar-striped progress-bar-animated" data-progress="88"
+                                    style="width:0%">
+                                    88%</div>
+                            </div>
+                        </div>
+                        <div class="text-center border d-flex align-items-center justify-content-center"
+                            style="width: 10rem;height: 4rem;">
+                            <span>CSS3</span>
+                            <div class="progress mx-2" style="width: 50%;">
+                                <div class="progress-bar progress-bar-striped progress-bar-animated" data-progress="66"
+                                    style="width:0%">
+                                    66%</div>
+                            </div>
+                        </div>
+                        <div class="text-center border d-flex align-items-center justify-content-center"
+                            style="width: 10rem;height: 4rem;">
+                            <div style="position: relative;">
+                                <span
+                                    style="position: absolute; top: 50%; left: 50%; transform: translate(-50%,-50%);">JS</span><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                    &nbsp;&nbsp;&nbsp;</span>
+                            </div>
+                            <div class="progress mx-2" style="width: 50%;">
+                                <div class="progress-bar progress-bar-striped progress-bar-animated" data-progress="75"
+                                    style="width:0%">
+                                    75%</div>
+                            </div>
+                        </div>
+                        <div class="text-center border d-flex align-items-center justify-content-center"
+                            style="width: 10rem;height: 4rem;">
+                            <span>Bootstrap</span>
+                            <div class="progress mx-2" style="width: 50%;">
+                                <div class="progress-bar progress-bar-striped progress-bar-animated" data-progress="84"
+                                    style="width:0%">
+                                    84%</div>
+                            </div>
+                        </div>
+                        <div class="text-center border d-flex align-items-center justify-content-center"
+                            style="width: 10rem;height: 4rem;">
+                            <span>React</span>
+                            <div class="progress mx-2" style="width: 50%;">
+                                <div class="progress-bar progress-bar-striped " style="width:1%">
+                                    1%
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-pane container mt-5 mb-5 text-center p-2" id="about">
+                    <p class="mb-5 display-5">About Me!</p>
+                    <p style="line-height: 1.7;">Hello! I'm <a href="https://www.linkedin.com/in/erenova/"
+                            target="_blank">Eren</a> a 17-year-old web development enthusiast. My journey began two
+                        years ago with FreeCodeCamp, where I obtained two certificates that cemented my understanding of
+                        HTML, CSS, and JavaScript.
+
+                        With this foundational knowledge, I independently mastered Bootstrap, a skill showcased through
+                        the design and functionality of this very website.
+
+                        In August 2022, after concluding my journey with FreeCodeCamp, I embarked on a new educational
+                        endeavor with The Odin Project the following month. This opportunity has continuously presented
+                        me with fresh challenges, fuelling my passion and commitment to web development.
+
+                        As I look forward, I am excited to dive into the world of React.js, eager to expand my expertise
+                        and elevate the dynamic web experiences I can offer.
+
+                        Thank you for taking an interest in my journey!</p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <div class="fixed-bottom text-center text-bg-secondary p-2"><span class="text-light fw-bold"><a
+                href="https://github.com/erenova" target="_blank"
+                class="link-info link-underline-secondary ">Erenova</a></span>
+        <span class="text-dark fw-bolder">©</span> <span class="text-dark mx-1">2023</span>
+        All rights reserved.
+    </div>
+    <div class="modal fade" id="modal1">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+
+                <!-- Modal Header -->
+                <div class="modal-header">
+                    <h4 class="modal-title">Calculator Project</h4>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+
+                <!-- Modal body -->
+                <div class="modal-body d-flex flex-column justify-content-center align-items-center">
+                    <a href="https://calculatorodin.vercel.app/" target="_blank"><img src="utils/calc.png"
+                            alt="Sketch Project" style="width: 100%;  " data-bs-toggle="tooltip"
+                            data-bs-placement="bottom" title="Click Me!"></a>
+                    <div class="text-section p-2 text-center fs-4">
+                        <p>This Calculator project made with Html5, CSS3, and vanilla JavaScript</p>
+                        <p><a href="https://calculatorodin.vercel.app/" class="link-primary" target="_blank">try
+                                it
+                                here!</a></p>
+                        <p><a href="https://github.com/erenova/calculator" class="link-secondary" target="_blank">
+                                Source Code</a></p>
+                    </div>
+                </div>
+
+                <!-- Modal footer -->
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="modal2">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+
+                <!-- Modal Header -->
+                <div class="modal-header">
+                    <h4 class="modal-title">Sketchpad Project</h4>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+
+                <!-- Modal body -->
+                <div class="modal-body">
+                    <a href="https://sketchpadodin.vercel.app/" target="_blank"><img src="utils/sketch.png"
+                            alt="Sketch Project" style="width: 100%;" data-bs-toggle="tooltip"
+                            data-bs-placement="bottom" title="Click Me!"></a>
+                    <div class="text-section p-2 text-center fs-4">
+                        <p>This project briefly provides you a sketch pad to draw, set grid, color palette and
+                            more...</p>
+                        <p><a href="https://sketchpadodin.vercel.app/" class="link-primary" target="_blank">try
+                                it
+                                here!</a></p>
+                        <p><a href="https://github.com/erenova/sketchpad" class="link-secondary" target="_blank">
+                                Source Code</a></p>
+                    </div>
+                </div>
+
+                <!-- Modal footer -->
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="modal3">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+
+                <!-- Modal Header -->
+                <div class="modal-header">
+                    <h4 class="modal-title">Rock Paper Scissors Project</h4>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+
+                <!-- Modal body -->
+                <div class="modal-body">
+                    <a href="https://rpsodin.vercel.app/" target="_blank"><img src="utils/rps.png" alt="Sketch Project"
+                            style="width: 100%;" data-bs-toggle="tooltip" data-bs-placement="bottom"
+                            title="Click Me!"></a>
+                    <div class="text-section p-2 text-center fs-4">
+                        <p>This project briefly provides you a Rock Paper Scissors game</p>
+                        <p><a href="https://rpsodin.vercel.app/" class="link-primary" target="_blank">try
+                                it
+                                here!</a></p>
+                        <p><a href="https://github.com/erenova/rock-paper-scissors" class="link-secondary"
+                                target="_blank">
+                                Source Code</a></p>
+                    </div>
+                </div>
+                <!-- Modal footer -->
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+        crossorigin="anonymous"></script>
+    <script>
+        const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
+        const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
+    </script>
 </body>
+
 </html>
