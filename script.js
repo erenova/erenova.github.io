@@ -26,6 +26,14 @@ function resetAnimations() {
 
 domItems.progressLink.forEach((e) => {
   e.addEventListener("click", () => {
+    domItems.homeLink.forEach((e) => {
+      e.classList.remove("active");
+    });
+    domItems.aboutLink.forEach((e) => {
+      e.classList.remove("active");
+    });
+    domItems.progressLink[0].classList.add("active");
+    domItems.progressLink[1].classList.add("active");
     document.querySelectorAll("[data-progress]").forEach((e) => {
       progressAnimation(e);
     });
@@ -34,6 +42,14 @@ domItems.progressLink.forEach((e) => {
 
 domItems.homeLink.forEach((e) => {
   e.addEventListener("click", () => {
+    domItems.aboutLink.forEach((e) => {
+      e.classList.remove("active");
+    });
+    domItems.progressLink.forEach((e) => {
+      e.classList.remove("active");
+    });
+    domItems.homeLink[0].classList.add("active");
+    domItems.homeLink[1].classList.add("active");
     document.querySelectorAll("[data-progress]").forEach((e) => {
       resetAnimations();
     });
@@ -41,6 +57,14 @@ domItems.homeLink.forEach((e) => {
 });
 domItems.aboutLink.forEach((e) => {
   e.addEventListener("click", () => {
+    domItems.homeLink.forEach((e) => {
+      e.classList.remove("active");
+    });
+    domItems.progressLink.forEach((e) => {
+      e.classList.remove("active");
+    });
+    domItems.aboutLink[0].classList.add("active");
+    domItems.aboutLink[1].classList.add("active");
     document.querySelectorAll("[data-progress]").forEach((e) => {
       resetAnimations();
     });
