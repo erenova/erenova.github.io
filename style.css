@@ -3,3 +3,9 @@
     display: none;
   }
 }
+
+.large-images {
+  width: 100%;
+  height: 17rem;
+  object-fit: contain;
+}
