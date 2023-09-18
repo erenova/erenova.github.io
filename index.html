@@ -67,27 +67,9 @@
             <div class="tab-content mt-5  border border-1 border-secondary border-opacity-25">
                 <div class="tab-pane container mt-5 mb-5 text-center p-2 active" id="home">
                     <p class="mb-5 display-5">Completed Projects</p>
-                    <div class=" gap-4 mt-3 d-flex justify-content-center align-items-center flex-wrap">
-                        <button type="button" data-bs-toggle="modal" data-bs-target="#modal4"
-                            class="text-center btn btn-outline-success d-flex align-items-center justify-content-center"
-                            style="width: 10rem;height: 4rem;">
-                            Library App
-                        </button>
-                        <button type="button" data-bs-toggle="modal" data-bs-target="#modal1"
-                            class="text-center btn btn-outline-success d-flex align-items-center justify-content-center"
-                            style="width: 10rem;height: 4rem;">
-                            Calculator
-                        </button>
-                        <button type="button" data-bs-toggle="modal" data-bs-target="#modal2"
-                            class="text-center btn btn-outline-success d-flex align-items-center justify-content-center"
-                            style="width: 10rem;height: 4rem;">
-                            Sketchpad
-                        </button>
-                        <button type="button" data-bs-toggle="modal" data-bs-target="#modal3"
-                            class="text-center btn btn-outline-success d-flex align-items-center justify-content-center"
-                            style="width: 10rem; ">
-                            Rock Paper Scissors
-                        </button>
+                    <div id="button-holder"
+                        class=" gap-4 mt-3 d-flex justify-content-center align-items-center flex-wrap">
+
 
                     </div>
                 </div>
@@ -174,138 +156,10 @@
         <span class="text-dark fw-bolder">©</span> <span class="text-dark mx-1">2023</span>
         All rights reserved.
     </div>
-    <div class="modal fade" id="modal1">
-        <div class="modal-dialog modal-dialog-centered">
-            <div class="modal-content">
+    <div id="modal-holder">
 
-                <!-- Modal Header -->
-                <div class="modal-header">
-                    <h4 class="modal-title">Calculator Project</h4>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
-                </div>
-
-                <!-- Modal body -->
-                <div class="modal-body d-flex flex-column justify-content-center align-items-center">
-                    <a href="https://calculatorodin.vercel.app/" target="_blank"><img src="utils/calc.png"
-                            alt="Sketch Project" style="width: 100%;  " data-bs-toggle="tooltip"
-                            data-bs-placement="bottom" title="Click Me!"></a>
-                    <div class="text-section p-2 text-center fs-4">
-                        <p>This Calculator project made with Html5, CSS3, and vanilla JavaScript</p>
-                        <p><a href="https://calculatorodin.vercel.app/" class="link-primary" target="_blank">try
-                                it
-                                here!</a></p>
-                        <p><a href="https://github.com/erenova/calculator" class="link-secondary" target="_blank">
-                                Source Code</a></p>
-                    </div>
-                </div>
-
-                <!-- Modal footer -->
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
-                </div>
-
-            </div>
-        </div>
     </div>
-    <div class="modal fade" id="modal2">
-        <div class="modal-dialog modal-dialog-centered">
-            <div class="modal-content">
 
-                <!-- Modal Header -->
-                <div class="modal-header">
-                    <h4 class="modal-title">Sketchpad Project</h4>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
-                </div>
-
-                <!-- Modal body -->
-                <div class="modal-body">
-                    <a href="https://sketchpadodin.vercel.app/" target="_blank"><img src="utils/sketch.png"
-                            alt="Sketch Project" style="width: 100%;" data-bs-toggle="tooltip"
-                            data-bs-placement="bottom" title="Click Me!"></a>
-                    <div class="text-section p-2 text-center fs-4">
-                        <p>This project briefly provides you a sketch pad to draw, set grid, color palette and
-                            more...</p>
-                        <p><a href="https://sketchpadodin.vercel.app/" class="link-primary" target="_blank">try
-                                it
-                                here!</a></p>
-                        <p><a href="https://github.com/erenova/sketchpad" class="link-secondary" target="_blank">
-                                Source Code</a></p>
-                    </div>
-                </div>
-
-                <!-- Modal footer -->
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
-                </div>
-
-            </div>
-        </div>
-    </div>
-    <div class="modal fade" id="modal3">
-        <div class="modal-dialog modal-dialog-centered">
-            <div class="modal-content">
-
-                <!-- Modal Header -->
-                <div class="modal-header">
-                    <h4 class="modal-title">Rock Paper Scissors Project</h4>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
-                </div>
-
-                <!-- Modal body -->
-                <div class="modal-body">
-                    <a href="https://rpsodin.vercel.app/" target="_blank"><img src="utils/rps.png" alt="Sketch Project"
-                            style="width: 100%;" data-bs-toggle="tooltip" data-bs-placement="bottom"
-                            title="Click Me!"></a>
-                    <div class="text-section p-2 text-center fs-4">
-                        <p>This project briefly provides you a Rock Paper Scissors game</p>
-                        <p><a href="https://rpsodin.vercel.app/" class="link-primary" target="_blank">try
-                                it
-                                here!</a></p>
-                        <p><a href="https://github.com/erenova/rock-paper-scissors" class="link-secondary"
-                                target="_blank">
-                                Source Code</a></p>
-                    </div>
-                </div>
-                <!-- Modal footer -->
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
-                </div>
-
-            </div>
-        </div>
-    </div>
-    <div class="modal fade" id="modal4">
-        <div class="modal-dialog modal-dialog-centered">
-            <div class="modal-content">
-
-                <!-- Modal Header -->
-                <div class="modal-header">
-                    <h4 class="modal-title">Library Project</h4>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
-                </div>
-
-                <!-- Modal body -->
-                <div class="modal-body">
-                    <a href="https://librapp.vercel.app/" target="_blank"><img src="utils/librapp.png"
-                            alt="library project" style="width: 100%;" data-bs-toggle="tooltip"
-                            data-bs-placement="bottom" title="Click Me!"></a>
-                    <div class="text-section p-2 text-center fs-4">
-                        <p>Library Project! Made With html5&CSS3&JavaScript, responsive!</p>
-                        <p><a href="https://librapp.vercel.app/" class="link-primary" target="_blank">try
-                                it
-                                here!</a></p>
-                        <p><a href="https://github.com/erenova/library" class="link-secondary" target="_blank">
-                                Source Code</a></p>
-                    </div>
-                </div>
-                <!-- Modal footer -->
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
-                </div>
-
-            </div>
-        </div>
-    </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
         crossorigin="anonymous"></script>
