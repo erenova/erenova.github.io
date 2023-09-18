@@ -157,7 +157,7 @@ domItems.aboutLink.forEach((e) => {
 addNewProject(
   `tic-tac-toe`,
   `Tic Tac Toe`,
-  "Tic Tac Toe project with AI, three option of Ai, easy med and hard AI modes",
+  "Tic Tac Toe project with AI, three option of Ai, easy med and hard modes",
   true
 );
 
@@ -174,14 +174,28 @@ addNewProject(
   `This Calculator project made with Html5, CSS3, and vanilla JavaScript`,
   true
 );
-
 addNewProject(
   `sketchpad`,
   `Sketchpad`,
-  `This project briefly provides you a sketch pad to draw, set grid, color palette and more...`
+  `This project briefly provides you a sketch pad to draw, set grid, color palette and more...`,
+  true
 );
+addNewProject(
+  `landing-page`,
+  `Landing Page`,
+  `Landing page project for certain css features`,
+  true
+);
+addNewProject(
+  `admin-dashboard`,
+  `Admin Dashboard`,
+  `Admin dashboard project for testing css Grid&Flexbox`,
+  true
+);
+
 addNewProject(
   `rock-paper-scissors`,
   `Rock Paper Scissors`,
-  `This project briefly provides you a Rock Paper Scissors game`
+  `This project briefly provides you a Rock Paper Scissors game`,
+  true
 );
