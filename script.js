@@ -155,6 +155,13 @@ domItems.aboutLink.forEach((e) => {
 });
 
 addNewProject(
+  `restaurant-page`,
+  `Restaurant Page`,
+  `This project uses tailwind/webpack, a restaurant site. Dynamically loads pages.`,
+  true
+);
+
+addNewProject(
   `tic-tac-toe`,
   `Tic Tac Toe`,
   "Tic Tac Toe project with AI, three option of Ai, easy med and hard modes",
