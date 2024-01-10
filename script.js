@@ -153,6 +153,12 @@ domItems.aboutLink.forEach((e) => {
     });
   });
 });
+addNewProject(
+  `todo-list`,
+  `To-Do List`,
+  `This project uses tailwind/webpack, a todo list project.`,
+  true
+);
 
 addNewProject(
   `restaurant-page`,
