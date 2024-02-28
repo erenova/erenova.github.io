@@ -153,62 +153,70 @@ domItems.aboutLink.forEach((e) => {
     });
   });
 });
+
+addNewProject(
+  `weather-app`,
+  `Weather App`,
+  `This project uses weatherAPI to get data.`,
+  true,
+);
+
 addNewProject(
   `todo-list`,
   `To-Do List`,
   `This project uses tailwind/webpack, a todo list project.`,
-  true
+  true,
 );
 
 addNewProject(
   `restaurant-page`,
   `Restaurant Page`,
   `This project uses tailwind/webpack, a restaurant site. Dynamically loads pages.`,
-  true
+  true,
 );
 
 addNewProject(
   `tic-tac-toe`,
   `Tic Tac Toe`,
   "Tic Tac Toe project with AI, three option of Ai, easy med and hard modes",
-  true
+  true,
 );
 
 addNewProject(
   `library`,
   `Library`,
   `Library Project! Made With html5&CSS3&JavaScript, responsive!`,
-  true
+  true,
 );
 
 addNewProject(
   `calculator`,
   `Calculator`,
   `This Calculator project made with Html5, CSS3, and vanilla JavaScript`,
-  true
+  true,
 );
 addNewProject(
   `sketchpad`,
   `Sketchpad`,
   `This project briefly provides you a sketch pad to draw, set grid, color palette and more...`,
-  true
+  true,
 );
 addNewProject(
   `landing-page`,
   `Landing Page`,
   `Landing page project for certain css features`,
-  true
+  true,
 );
 addNewProject(
   `admin-dashboard`,
   `Admin Dashboard`,
   `Admin dashboard project for testing css Grid&Flexbox`,
-  true
+  true,
 );
 
 addNewProject(
   `rock-paper-scissors`,
   `Rock Paper Scissors`,
   `This project briefly provides you a Rock Paper Scissors game`,
-  true
+  true,
 );
